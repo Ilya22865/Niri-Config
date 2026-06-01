@@ -1,0 +1,20 @@
+echo "*" >> .gitignore
+
+echo "!niri/" >> .gitignore
+echo "!waybar/" >> .gitignore
+echo "!scripts/" >> .gitignore
+echo "!nvim/" >> .gitignore
+echo "!foot/" >> .gitignore
+echo "!fish/" >> .gitignore
+echo "!fastfetch/" >> .gitignore
+echo "!rofi/" >> .gitignore
+echo "!hypr/" >> .gitignore
+echo "!dunst/" >> .gitignore
+echo "!cava/" >> .gitignore
+
+
+
+
+
+
+

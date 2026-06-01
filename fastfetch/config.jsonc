@@ -1,0 +1,133 @@
+{
+  /////===== LOGO =====/////
+  "logo": {
+    "type": "auto",
+    "source": "~/Изображения/Hentai.txt",
+    // If you want to use Ascii only just remove the png path, and vice versa
+    "height": 10,
+    "padding": {
+      "top": 1,
+      "left": 2,
+      "right": 2
+    },
+    "color": {
+      "1": "white"
+    }
+  },
+  "display": {
+    "separator": " "
+  },
+  /////===== MODULES =====/////
+  "modules": [
+    {
+      "type": "custom",
+      "key": "╭────────────╮",
+      "keyColor": "blue"
+    },
+    {
+      "key": "│  user    {#34} │",
+      "type": "title",
+      "format": "{host-name}",
+      "keyColor": "blue"
+    },
+    {
+      "type": "custom",
+      "key": "├────────────┤",
+      "keyColor": "blue"
+    },
+    {
+      "type": "os",
+      "key": "│ {icon} OS      {#keys}{#34} │",
+      "format": "{#38}{name} {#keys} {#34}",
+      "keyColor": "blue"
+    },
+    {
+      "type": "kernel",
+      "key": "│  Kernel  {#keys}{#34} │",
+      "keyColor": "blue"
+    },
+    {
+      "type": "de",
+      "key": "│  DE      {#keys}{#34} │",
+      "keyColor": "blue"
+    },
+    {
+      "type": "wm",
+      "key": "│  WM      {#keys}{#34} │",
+      "keyColor": "blue"
+    },
+    {
+      "type": "packages",
+      "key": "│ 󰏗 Packages{#keys}{#34} │",
+      "keyColor": "blue",
+      "disabled": [
+        "apk"
+      ],
+      "combined": false
+    },
+    {
+      "type": "custom",
+      "key": "╰────────────╯",
+      "keyColor": "blue"
+    },
+    // Previously... there was a break here, but I removed it
+    // so that the system info modules 
+    // can be grouped together in a box.
+    {
+      "type": "custom",
+      "key": "╭────────────╮"
+    },
+    {
+      "type": "memory",
+      "key": "│  Memory  {#keys} │",
+      "format": "{#38}{used} / {total}{#keys} "
+    },
+    {
+      "type": "disk",
+      "key": "│  Disk    {#keys} │",
+      "format": "{#38}{size-used} / {size-total}{#keys} "
+    },
+    {
+      "type": "swap",
+      "key": "│  Swap    {#keys} │",
+      "format": "{#38}{used} / {total}{#keys}"
+    },
+    {
+      "type": "cpu",
+      "key": "│  CPU     {#keys} │",
+      "format": "{#38}{name} ({cores-logical}){#keys}"
+    },
+    {
+      "type": "gpu",
+      "key": "│  GPU     {#keys} │",
+      "format": "{#38}{vendor} {name} ({type}){#keys}"
+    },
+    {
+      "type": "host",
+      "key": "│ 󰌢 Chassis  {#keys}│"
+    },
+    {
+      "type": "battery",
+      "key": "│  Battery {#keys} │"
+    },
+    {
+      "type": "custom",
+      "key": "╰────────────╯",
+    },
+    // commented colors, uncomment if you want to use it.
+    {
+      "type": "colors",
+      "key": " ",
+      "keyIcon": "",
+      "symbol": "circle",
+      "paddingLeft": 20,
+      "block": {
+        "width": 3,
+        "range": [
+          0,
+          15
+        ]
+      }
+    }
+  ]
+}

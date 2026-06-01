@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# Путь к папке с обоями
+WALLPAPER_DIR="$HOME/Pictures/Wallpapers"
+
+# Проверка, существует ли папка
+if [ ! -d "$WALLPAPER_DIR" ]; then
+  echo "❌ Папка с обоями не найдена: $WALLPAPER_DIR"
+  exit 1
+fi
+
+# 1. Ищем все картинки и передаем их в Rofi
+SELECTED=$(find "$WALLPAPER_DIR" -maxdepth 1 -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" -o -iname "*.gif" \) -printf "%f\n" | /home/user/.config/rofi/wallpapers/wallpapers.sh "🌌 Обои:")
+
+# Если нажали Esc или ничего не выбрали — выходим
+if [ -z "$SELECTED" ]; then
+  exit 0
+fi
+
+# Восстанавливаем полный путь к файлу
+FULL_PATH="$WALLPAPER_DIR/$SELECTED"
+
+echo "🎨 Устанавливаю: $FULL_PATH"
+
+# 2. Применяем обои через awww
+awww img "$FULL_PATH" --transition-fps 60 --transition-duration 3
+
+# 3. Генерируем палитру цветов через pywal
+wal -i "$FULL_PATH" -q
+
+# 4. 🔥 ИСПРАВЛЕНИЕ ДЛЯ FOOT:
+#    а) Меняем [colors] на [colors-dark]
+#    б) Убираем символы # из значений цветов
+if [ -f ~/.cache/wal/colors-foot.ini ]; then
+  sed -i 's/^\[colors\]$/[colors-dark]/' ~/.cache/wal/colors-foot.ini
+  sed -i 's/#//g' ~/.cache/wal/colors-foot.ini
+fi
+
+# 5. Применяем цвета к текущему терминалу
+cat ~/.cache/wal/sequences
