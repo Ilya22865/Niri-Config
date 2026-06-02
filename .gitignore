@@ -11,6 +11,8 @@ echo "!rofi/" >> .gitignore
 echo "!hypr/" >> .gitignore
 echo "!dunst/" >> .gitignore
 echo "!cava/" >> .gitignore
+echo "!images/" >> .gitignore
+echo "!README.md" >> .gitignore
 
 
 
