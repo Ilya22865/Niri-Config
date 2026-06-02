@@ -51,5 +51,5 @@ Huge thanks to the original creators whose configurations served as the foundati
 ### 📝 A Note on Wlogout
 I apologize, but I was unable to track down the original repository for the Wlogout configuration I initially used. However, please note that the only modification I made to the default setup was changing the button colors (they were originally green). 
 
-#!WARNING! Hyprpicker setup only for my PC and work not good... If you will use it - be careful, better tune it to yourself
+# !WARNING! Hyprpicker setup only for my PC and work not good... If you will use it - be careful, better tune it to yourself
 ---
