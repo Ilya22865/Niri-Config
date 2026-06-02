@@ -7,7 +7,7 @@ For those who are interested, this rice was not built entirely from scratch. I t
 
 ## Example 
 ### Main:
-![[Pasted image 20260602153235.png]]
+![[images/Pasted image 20260602153235.png]]
 
 ### Waybar:
 #### 1.
