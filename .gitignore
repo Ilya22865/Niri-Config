@@ -13,6 +13,8 @@ echo "!dunst/" >> .gitignore
 echo "!cava/" >> .gitignore
 echo "!images/" >> .gitignore
 echo "!README.md" >> .gitignore
+echo "!zed/" >> .gitignore
+echo "!yazi/" >> .gitignore
 
 
 

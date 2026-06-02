@@ -1,0 +1,17 @@
+[opener]
+# Открыть файл в nvim (для текстовых файлов)
+edit = [
+    { run = 'nvim "$@"', desc = "nvim", block = true, for = "unix" },
+]
+
+# Открыть в терминале (для любых файлов)
+open = [
+    { run = 'nvim "$@"', desc = "nvim", block = true, for = "unix" },
+]
+
+# Для видео/аудио/изображений можно указать другие программы
+reveal = [
+    { run = 'xdg-open "$1"', desc = "Open with default app", block = false, for = "unix" },
+]
+
+
