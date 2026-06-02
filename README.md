@@ -20,6 +20,21 @@ For those who are interested, this rice was not built entirely from scratch. I t
 ### Full Fastfetch
 ![Fastfetch Output](images/Pasted%20image%2020260602153407.png)
 
+### Wlogout
+![Wlogout Output](images/Wlogout.png)
+
+### Rofi
+#### Main rofi:
+![Rofi Main](images/Rofi.png)
+#### Switch wallpaper
+![Rofi Switch](images/RofiSwitchWallpaper.png)
+
+### Hyprlock
+![Hyprlock](images/hyprlock.png)
+
+### Hyprpicker
+![Hyprpicker](images/Hyprpicker.png)
+
 ## 🛠️ Custom Additions & Scripts
 I wrote the following components and scripts myself to enhance the functionality of the desktop environment:
 - **Keep Awake Toggle:** A custom script mapped to a dedicated button to prevent the system from going to sleep.
